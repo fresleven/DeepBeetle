@@ -1,3 +1,5 @@
+This repository was copied from the original repository hosted on [GitLab](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023) to preserve this work after we graduate from University of Illinois at Urbana-Champaign. Our student GitLab accounts are [akhot2](https://gitlab.engr.illinois.edu/akhot2) (Ayush Khot), [jl190](https://gitlab.engr.illinois.edu/jl190) (Jeremiah Lin), [smp6](https://gitlab.engr.illinois.edu/smp6) (Samuel Pasquesi), and [pavanp2](https://gitlab.engr.illinois.edu/pavanp2) (Pavan Pavithran).
+
 This was a group project for PHYS371 at the University of Illinois at Urbana-Champaign. This repository contains the necessary code and documents the results of implementing the YOLOv5 model to identify western corn rootworm beetles on yellow sticky traps. The architecture of YOLOv5 is summarized in the [GitHub repository](https://github.com/ultralytics/yolov5).
 
 # Preparing the repository
