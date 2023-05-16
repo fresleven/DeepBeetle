@@ -1,0 +1,14 @@
+2023-02-26 17:22:34,201 INFO    MainThread:154812 [internal.py:wandb_internal():90] W&B internal server running at pid: 154812, started at: 2023-02-26 17:22:34.200027
+2023-02-26 17:22:34,212 INFO    WriterThread:154812 [datastore.py:open_for_write():75] open: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_172224-bz7c0e77/run-bz7c0e77.wandb
+2023-02-26 17:22:34,222 DEBUG   SenderThread:154812 [sender.py:send():232] send: header
+2023-02-26 17:22:34,222 DEBUG   SenderThread:154812 [sender.py:send():232] send: run
+2023-02-26 17:22:34,233 INFO    SenderThread:154812 [sender.py:_maybe_setup_resume():489] checking resume status for None/YOLOv5/bz7c0e77
+2023-02-26 17:22:34,453 DEBUG   HandlerThread:154812 [handler.py:handle_request():141] handle_request: check_version
+2023-02-26 17:22:34,492 INFO    SenderThread:154812 [dir_watcher.py:__init__():166] watching files in: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_172224-bz7c0e77/files
+2023-02-26 17:22:34,495 INFO    SenderThread:154812 [sender.py:_start_run_threads():811] run started: bz7c0e77 with start time 1677453744
+2023-02-26 17:22:34,495 DEBUG   SenderThread:154812 [sender.py:send():232] send: summary
+2023-02-26 17:22:34,500 INFO    SenderThread:154812 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2023-02-26 17:22:34,501 DEBUG   SenderThread:154812 [sender.py:send_request():246] send_request: check_version
+2023-02-26 17:22:34,558 DEBUG   HandlerThread:154812 [handler.py:handle_request():141] handle_request: run_start
+2023-02-26 17:22:46,423 INFO    Thread-7  :154812 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_172224-bz7c0e77/files/wandb-summary.json
+2023-02-26 17:22:46,428 INFO    Thread-7  :154812 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_172224-bz7c0e77/files/output.log

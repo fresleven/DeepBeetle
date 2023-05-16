@@ -1,0 +1,6 @@
+names:
+- beetles
+nc: 0
+test: ../../crop/data/test/images
+train: ../../crop/data/train/images
+val: ../../crop/data/val/images

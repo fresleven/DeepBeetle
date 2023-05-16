@@ -1,0 +1,265 @@
+Overriding model.yaml nc=80 with nc=1
+                 from  n    params  module                                  arguments
+  0                -1  1      5280  models.common.Conv                      [3, 48, 6, 2, 2]
+  1                -1  1     41664  models.common.Conv                      [48, 96, 3, 2]
+  2                -1  2     65280  models.common.C3                        [96, 96, 2]
+  3                -1  1    166272  models.common.Conv                      [96, 192, 3, 2]
+  4                -1  4    444672  models.common.C3                        [192, 192, 4]
+  5                -1  1    664320  models.common.Conv                      [192, 384, 3, 2]
+  6                -1  6   2512896  models.common.C3                        [384, 384, 6]
+  7                -1  1   2655744  models.common.Conv                      [384, 768, 3, 2]
+  8                -1  2   4134912  models.common.C3                        [768, 768, 2]
+  9                -1  1   1476864  models.common.SPPF                      [768, 768, 5]
+ 10                -1  1    295680  models.common.Conv                      [768, 384, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  2   1182720  models.common.C3                        [768, 384, 2, False]
+ 14                -1  1     74112  models.common.Conv                      [384, 192, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  2    296448  models.common.C3                        [384, 192, 2, False]
+ 18                -1  1    332160  models.common.Conv                      [192, 192, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  2   1035264  models.common.C3                        [384, 384, 2, False]
+ 21                -1  1   1327872  models.common.Conv                      [384, 384, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  2   4134912  models.common.C3                        [768, 768, 2, False]
+ 24      [17, 20, 23]  1     24246  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [192, 384, 768]]
+Model summary: 291 layers, 20871318 parameters, 20871318 gradients, 48.2 GFLOPs
+Transferred 475/481 items from yolov5m.pt
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 79 weight(decay=0.0), 82 weight(decay=0.0005), 82 bias
+WARNING ⚠️ DP not recommended, use torch.distributed.run for best DDP Multi-GPU results.
+See Multi-GPU Tutorial at https://github.com/ultralytics/yolov5/issues/475 to get started.
+[34m[1mtrain: [39m[22mScanning /projects/akhot2/group-01-phys371-sp2023/crop/data/train/labels... 1001 images, 181 backgrounds, 0 corrupt: 100%|██████████| 1001/1001 [00:02<00:00, 442.85it/s]
+[34m[1mtrain: [39m[22mNew cache created: /projects/akhot2/group-01-phys371-sp2023/crop/data/train/labels.cache
+[34m[1mval: [39m[22mScanning /projects/akhot2/group-01-phys371-sp2023/crop/data/test/labels... 249 images, 42 backgrounds, 0 corrupt: 100%|██████████| 249/249 [00:00<00:00, 421.68it/s]
+[34m[1mval: [39m[22mNew cache created: /projects/akhot2/group-01-phys371-sp2023/crop/data/test/labels.cache
+[34m[1mAutoAnchor: [39m[22m5.97 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Plotting labels to runs/train/exp8/labels.jpg...
+Image sizes 1280 train, 1280 val
+Using 16 dataloader workers
+Logging results to [1mruns/train/exp8
+Starting training for 30 epochs...
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       0/29        13G     0.1003    0.05462          0         39       1280: 100%|██████████| 63/63 [01:25<00:00,  1.35s/it]
+
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:03<00:00,  2.32it/s]
+                   all        249        546      0.107      0.516     0.0915     0.0228
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       1/29        16G    0.08137    0.03022          0         27       1280: 100%|██████████| 63/63 [01:21<00:00,  1.29s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:03<00:00,  2.56it/s]
+                   all        249        546     0.0788      0.427     0.0727     0.0202
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       2/29        16G    0.07807    0.02594          0         39       1280: 100%|██████████| 63/63 [01:06<00:00,  1.05s/it]
+
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:04<00:00,  1.72it/s]
+                   all        249        546      0.178      0.619      0.172     0.0593
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       3/29        16G    0.06989    0.02582          0         57       1280: 100%|██████████| 63/63 [01:16<00:00,  1.21s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:02<00:00,  2.78it/s]
+                   all        249        546      0.162      0.748      0.161     0.0538
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       4/29        16G    0.06044    0.02575          0         47       1280: 100%|██████████| 63/63 [01:07<00:00,  1.07s/it]
+
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:02<00:00,  2.67it/s]
+                   all        249        546      0.483      0.595      0.508      0.134
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       5/29        16G    0.05542    0.02455          0         31       1280: 100%|██████████| 63/63 [00:57<00:00,  1.09it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  4.25it/s]
+                   all        249        546      0.343      0.797      0.345      0.099
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       6/29        16G    0.05063    0.02355          0         43       1280: 100%|██████████| 63/63 [00:56<00:00,  1.11it/s]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  4.34it/s]
+                   all        249        546      0.514      0.974      0.672      0.303
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       7/29        16G    0.04899    0.02446          0         63       1280:  62%|██████▏   | 39/63 [02:07<01:18,  3.28s/it]
+Traceback (most recent call last):
+  File "/projects/akhot2/group-01-phys371-sp2023/yolov5_model/train.py", line 640, in <module>
+    main(opt)
+  File "/projects/akhot2/group-01-phys371-sp2023/yolov5_model/train.py", line 529, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "/projects/akhot2/group-01-phys371-sp2023/yolov5_model/train.py", line 322, in train
+    scaler.unscale_(optimizer)  # unscale gradients
+  File "/raid/projects/akhot2/conda/envs/akhot2/lib/python3.9/site-packages/torch/cuda/amp/grad_scaler.py", line 279, in unscale_
+    optimizer_state["found_inf_per_device"] = self._unscale_grads_(optimizer, inv_scale, found_inf, False)
+  File "/raid/projects/akhot2/conda/envs/akhot2/lib/python3.9/site-packages/torch/cuda/amp/grad_scaler.py", line 225, in _unscale_grads_
+    per_device_found_inf.get(device),
+  File "/raid/projects/akhot2/conda/envs/akhot2/lib/python3.9/site-packages/torch/cuda/amp/grad_scaler.py", line 21, in get
+    retval = self.master.to(device=device, non_blocking=True, copy=True)
+KeyboardInterrupt

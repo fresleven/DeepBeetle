@@ -1,0 +1,35 @@
+{
+    "os": "Linux-3.10.0-1160.81.1.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.9.12",
+    "heartbeatAt": "2023-02-23T22:23:17.091737",
+    "startedAt": "2023-02-23T22:23:12.379441",
+    "docker": null,
+    "gpu": "A100-SXM4-40GB",
+    "gpu_count": 8,
+    "cpu_count": 256,
+    "cuda": "11.0.228",
+    "args": [
+        "--img",
+        "1280",
+        "--batch",
+        "16",
+        "--epochs",
+        "150",
+        "--data",
+        "beetles.yaml",
+        "--weights",
+        "yolov5m.pt"
+    ],
+    "state": "running",
+    "program": "/projects/akhot2/group-01-phys371-sp2023/yolov5_model/train.py",
+    "codePath": "yolov5_model/train.py",
+    "git": {
+        "remote": "https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023",
+        "commit": "593b911d70c928d2b7b54a597a3f8af0c60e615c"
+    },
+    "email": "khotayush@gmail.com",
+    "root": "/projects/akhot2/group-01-phys371-sp2023",
+    "host": "hal-dgx",
+    "username": "akhot2",
+    "executable": "/raid/projects/akhot2/conda/envs/akhot2/bin/python"
+}

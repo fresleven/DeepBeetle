@@ -1,0 +1,129 @@
+2023-02-26 18:13:41,380 INFO    MainThread:96255 [internal.py:wandb_internal():90] W&B internal server running at pid: 96255, started at: 2023-02-26 18:13:41.378921
+2023-02-26 18:13:41,402 INFO    WriterThread:96255 [datastore.py:open_for_write():75] open: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/run-tzc0g9ld.wandb
+2023-02-26 18:13:41,406 DEBUG   SenderThread:96255 [sender.py:send():232] send: header
+2023-02-26 18:13:41,406 DEBUG   SenderThread:96255 [sender.py:send():232] send: run
+2023-02-26 18:13:41,418 INFO    SenderThread:96255 [sender.py:_maybe_setup_resume():489] checking resume status for None/YOLOv5/tzc0g9ld
+2023-02-26 18:13:41,723 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: check_version
+2023-02-26 18:13:41,735 INFO    SenderThread:96255 [dir_watcher.py:__init__():166] watching files in: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files
+2023-02-26 18:13:41,735 INFO    SenderThread:96255 [sender.py:_start_run_threads():811] run started: tzc0g9ld with start time 1677456816
+2023-02-26 18:13:41,735 DEBUG   SenderThread:96255 [sender.py:send():232] send: summary
+2023-02-26 18:13:41,737 INFO    SenderThread:96255 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2023-02-26 18:13:41,737 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: check_version
+2023-02-26 18:13:41,799 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: run_start
+2023-02-26 18:13:47,618 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/output.log
+2023-02-26 18:13:47,619 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-summary.json
+2023-02-26 18:13:49,745 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_modified():226] file/dir modified: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/output.log
+2023-02-26 18:13:51,747 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_modified():226] file/dir modified: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/output.log
+2023-02-26 18:13:56,299 DEBUG   HandlerThread:96255 [meta.py:__init__():35] meta init
+2023-02-26 18:13:56,299 DEBUG   HandlerThread:96255 [meta.py:__init__():49] meta init done
+2023-02-26 18:13:56,299 DEBUG   HandlerThread:96255 [meta.py:probe():209] probe
+2023-02-26 18:13:56,309 DEBUG   HandlerThread:96255 [meta.py:_setup_git():199] setup git
+2023-02-26 18:13:56,366 DEBUG   HandlerThread:96255 [meta.py:_setup_git():206] setup git done
+2023-02-26 18:13:56,366 DEBUG   HandlerThread:96255 [meta.py:_save_pip():53] save pip
+2023-02-26 18:13:56,368 DEBUG   HandlerThread:96255 [meta.py:_save_pip():67] save pip done
+2023-02-26 18:13:56,368 DEBUG   HandlerThread:96255 [meta.py:_save_conda():74] save conda
+2023-02-26 18:13:56,790 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/requirements.txt
+2023-02-26 18:13:56,792 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/conda-environment.yaml
+2023-02-26 18:13:57,427 WARNING MainThread:96255 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2023-02-26 18:13:57,491 DEBUG   HandlerThread:96255 [meta.py:_save_conda():84] save conda done
+2023-02-26 18:13:57,492 DEBUG   HandlerThread:96255 [meta.py:probe():247] probe done
+2023-02-26 18:13:57,500 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: stop_status
+2023-02-26 18:13:57,501 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: stop_status
+2023-02-26 18:13:57,507 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: poll_exit
+2023-02-26 18:13:57,508 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: poll_exit
+2023-02-26 18:13:57,580 DEBUG   SenderThread:96255 [sender.py:send():232] send: telemetry
+2023-02-26 18:13:57,581 DEBUG   SenderThread:96255 [sender.py:send():232] send: telemetry
+2023-02-26 18:13:57,583 DEBUG   SenderThread:96255 [sender.py:send():232] send: exit
+2023-02-26 18:13:57,583 INFO    SenderThread:96255 [sender.py:send_exit():368] handling exit code: 1
+2023-02-26 18:13:57,583 INFO    SenderThread:96255 [sender.py:send_exit():370] handling runtime: 15
+2023-02-26 18:13:57,585 INFO    SenderThread:96255 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2023-02-26 18:13:57,585 INFO    SenderThread:96255 [sender.py:send_exit():376] send defer
+2023-02-26 18:13:57,585 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: poll_exit
+2023-02-26 18:13:57,585 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: poll_exit
+2023-02-26 18:13:57,585 DEBUG   SenderThread:96255 [sender.py:send():232] send: files
+2023-02-26 18:13:57,585 INFO    SenderThread:96255 [sender.py:_save_file():946] saving file wandb-metadata.json with policy now
+2023-02-26 18:13:57,586 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:57,586 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 0
+2023-02-26 18:13:57,586 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:57,587 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 0
+2023-02-26 18:13:57,587 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 1
+2023-02-26 18:13:57,588 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:57,588 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 1
+2023-02-26 18:13:57,790 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_modified():226] file/dir modified: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-summary.json
+2023-02-26 18:13:57,791 INFO    Thread-7  :96255 [dir_watcher.py:_on_file_created():213] file/dir created: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-metadata.json
+2023-02-26 18:13:57,907 INFO    Thread-11 :96255 [upload_job.py:push():137] Uploaded file /tmp/tmpznl0bkx0wandb/zz9k064r-wandb-metadata.json
+2023-02-26 18:13:58,095 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,096 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 1
+2023-02-26 18:13:58,096 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 2
+2023-02-26 18:13:58,096 DEBUG   SenderThread:96255 [sender.py:send():232] send: stats
+2023-02-26 18:13:58,097 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,097 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 2
+2023-02-26 18:13:58,097 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,097 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 2
+2023-02-26 18:13:58,097 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 3
+2023-02-26 18:13:58,097 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,097 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 3
+2023-02-26 18:13:58,097 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,097 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 3
+2023-02-26 18:13:58,097 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 4
+2023-02-26 18:13:58,098 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,098 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 4
+2023-02-26 18:13:58,098 DEBUG   SenderThread:96255 [sender.py:send():232] send: summary
+2023-02-26 18:13:58,099 INFO    SenderThread:96255 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2023-02-26 18:13:58,099 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,099 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 4
+2023-02-26 18:13:58,099 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 5
+2023-02-26 18:13:58,100 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,100 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 5
+2023-02-26 18:13:58,100 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,100 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 5
+2023-02-26 18:13:58,227 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 6
+2023-02-26 18:13:58,228 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,228 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 6
+2023-02-26 18:13:58,228 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,228 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 6
+2023-02-26 18:13:58,228 INFO    SenderThread:96255 [dir_watcher.py:finish():279] shutting down directory watcher
+2023-02-26 18:13:58,795 INFO    SenderThread:96255 [dir_watcher.py:_on_file_modified():226] file/dir modified: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/config.yaml
+2023-02-26 18:13:58,796 INFO    SenderThread:96255 [dir_watcher.py:_on_file_modified():226] file/dir modified: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-summary.json
+2023-02-26 18:13:58,796 INFO    SenderThread:96255 [dir_watcher.py:finish():309] scan: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files
+2023-02-26 18:13:58,797 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/conda-environment.yaml conda-environment.yaml
+2023-02-26 18:13:58,797 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-metadata.json wandb-metadata.json
+2023-02-26 18:13:58,797 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/output.log output.log
+2023-02-26 18:13:58,797 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-summary.json wandb-summary.json
+2023-02-26 18:13:58,797 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/requirements.txt requirements.txt
+2023-02-26 18:13:58,800 INFO    SenderThread:96255 [dir_watcher.py:finish():323] scan save: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/config.yaml config.yaml
+2023-02-26 18:13:58,803 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 7
+2023-02-26 18:13:58,806 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:58,806 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 7
+2023-02-26 18:13:58,806 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:58,809 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 7
+2023-02-26 18:13:58,809 INFO    SenderThread:96255 [file_pusher.py:finish():145] shutting down file pusher
+2023-02-26 18:13:59,330 INFO    Thread-13 :96255 [upload_job.py:push():137] Uploaded file /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/wandb-summary.json
+2023-02-26 18:13:59,337 INFO    Thread-15 :96255 [upload_job.py:push():137] Uploaded file /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/config.yaml
+2023-02-26 18:13:59,352 INFO    Thread-12 :96255 [upload_job.py:push():137] Uploaded file /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/output.log
+2023-02-26 18:13:59,353 INFO    Thread-14 :96255 [upload_job.py:push():137] Uploaded file /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/files/requirements.txt
+2023-02-26 18:13:59,634 INFO    Thread-6  :96255 [sender.py:transition_state():389] send defer: 8
+2023-02-26 18:13:59,640 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:59,640 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 8
+2023-02-26 18:13:59,640 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:59,641 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 8
+2023-02-26 18:13:59,812 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 9
+2023-02-26 18:13:59,815 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:59,815 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 9
+2023-02-26 18:13:59,815 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:59,815 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 9
+2023-02-26 18:13:59,815 INFO    SenderThread:96255 [sender.py:transition_state():389] send defer: 10
+2023-02-26 18:13:59,818 DEBUG   SenderThread:96255 [sender.py:send():232] send: final
+2023-02-26 18:13:59,818 DEBUG   HandlerThread:96255 [handler.py:handle_request():141] handle_request: defer
+2023-02-26 18:13:59,818 DEBUG   SenderThread:96255 [sender.py:send():232] send: footer
+2023-02-26 18:13:59,818 INFO    HandlerThread:96255 [handler.py:handle_request_defer():164] handle defer: 10
+2023-02-26 18:13:59,818 DEBUG   SenderThread:96255 [sender.py:send_request():246] send_request: defer
+2023-02-26 18:13:59,818 INFO    SenderThread:96255 [sender.py:send_request_defer():385] handle sender defer: 10
+2023-02-26 18:14:04,455 WARNING MainThread:96255 [internal.py:is_dead():387] Internal process exiting, parent pid 93932 disappeared
+2023-02-26 18:14:04,470 ERROR   MainThread:96255 [internal.py:wandb_internal():149] Internal process shutdown.
+2023-02-26 18:14:04,839 INFO    WriterThread:96255 [datastore.py:close():279] close: /projects/akhot2/group-01-phys371-sp2023/yolov5_model/wandb/run-20230226_181336-tzc0g9ld/run-tzc0g9ld.wandb
+2023-02-26 18:14:04,850 INFO    SenderThread:96255 [sender.py:finish():1106] shutting down sender
+2023-02-26 18:14:04,850 INFO    SenderThread:96255 [file_pusher.py:finish():145] shutting down file pusher
+2023-02-26 18:14:04,851 INFO    SenderThread:96255 [file_pusher.py:join():150] waiting for file pusher
+2023-02-26 18:14:04,853 INFO    HandlerThread:96255 [handler.py:finish():806] shutting down handler
+2023-02-26 18:14:04,874 INFO    MainThread:96255 [internal.py:handle_exit():80] Internal process exited
