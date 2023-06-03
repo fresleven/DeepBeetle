@@ -9,7 +9,7 @@ To train/retrain models and run the notebooks provided with this repository, one
 
 ### Arduino Code and Drone Attachment
 
-The code and files for the data acquisition from the arduino, the design of the PCB, and the enclosure files, are stored in the [`Assemblies and Hardware`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/Assemblies%20and%20Hardware) directory. More information about these files is explained in the `README` file provided in [`Assemblies and Hardware`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/Assemblies%20and%20Hardware) directory.
+The code and files for the data acquisition from the arduino, the design of the PCB, and the enclosure files, are stored in the [`Assemblies and Hardware`](https://github.com/fresleven/DeepBeetle/tree/main/Assemblies%20and%20Hardware) directory. More information about these files is explained in the `README` file provided in [`Assemblies and Hardware`](https://github.com/fresleven/DeepBeetle/tree/main/Assemblies%20and%20Hardware) directory.
 
 ### Download Data
 The dataset used by these studies has been made available to use by Professor Spencer of the University of Illinois at Urbana-Champaign It is available at https://universe.roboflow.com/wcr-beetle-detection/wcr-beetle-traps. Please use the steps provided on the Roboflow website to download the latest version of the dataset. We used the validation part of this dataset as the test images for our paper. Some of these images were incorrectly cropped, and so we discarded them from our results.
@@ -35,10 +35,10 @@ pip install -r requirements.txt
 ```
 
 ### Data pre-processing
-To preprocess the data for the `YOLOv5` models, please look at the `README` file in [`crop`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/crop) folder. 
+To preprocess the data for the `YOLOv5` models, please look at the `README` file in [`crop`](https://github.com/fresleven/DeepBeetle/tree/main/crop) folder. 
 
 # Training your own models
-For each model architecture, we have trained a number of alternate variants and they are hosted in the [`yolov5_model/runs/train`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/yolov5_model/runs/train) directory. If you are interested in training your own models, please follow the instructions in the `README` file given in the [`yolov5_model`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/yolov5_model) directory. Please use the `beetles.yaml` as the `.yaml` file to train your own model. An example of training the model is:
+For each model architecture, we have trained a number of alternate variants and they are hosted in the [`yolov5_model/runs/train`](https://github.com/fresleven/DeepBeetle/tree/main/yolov5_model/runs/train) directory. If you are interested in training your own models, please follow the instructions in the `README` file given in the [`yolov5_model`](https://github.com/fresleven/DeepBeetle/tree/main/yolov5_model) directory. Please use the `beetles.yaml` as the `.yaml` file to train your own model. An example of training the model is:
 ```
 cd $PROJPATH
 cd yolov5_model
@@ -47,13 +47,13 @@ python train.py --img 1280 --batch 16 --epochs 100 --data beetles.yaml --weights
 The model would be then stored in the `yolov5_model/runs/train/NAME` folder.
 
 # Reproducing image classification results
-**They rely on avaliability of the pretrained models and the datasets in the way they have been setup in the previous section**. The tested images in the paper are stored in [`yolov5_model/runs/detect`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/tree/main/yolov5_model/runs/detect) directory. You can test unlabeled images by
+**They rely on avaliability of the pretrained models and the datasets in the way they have been setup in the previous section**. The tested images in the paper are stored in [`yolov5_model/runs/detect`](https://github.com/fresleven/DeepBeetle/tree/main/yolov5_model/runs/detect) directory. You can test unlabeled images by
 ```
 cd $PROJPATH
 cd yolov5_model
 python test.py --img 1280 --source path/to/images/ --weights path/to/weights/best.pt --name NAME --workers 30
 ```
-For full data acquisition, you can use the [`transfer.py`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/blob/main/transfer/transfer.py) file to output the number of predicted beetles as well as the confidence level into an [`output.csv`](https://gitlab.engr.illinois.edu/akhot2/group-01-phys371-sp2023/-/blob/main/transfer/output.csv) file. To run this, run the following commands:
+For full data acquisition, you can use the [`transfer.py`](https://github.com/fresleven/DeepBeetle/blob/main/transfer/transfer.py) file to output the number of predicted beetles as well as the confidence level into an [`output.csv`](https://github.com/fresleven/DeepBeetle/blob/main/transfer/output.csv) file. To run this, run the following commands:
 ```
 cd $PROJPATH
 cd transfer
